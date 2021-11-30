@@ -2,11 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def login(request):
-    return HttpResponse('<em>Login here Anytime Anyday</em>🔑🔐')
+def about_detail(request):
+    return render(request, 'public/frontend/about-detail.html')
 
-def register(request):
-    return HttpResponse('<b>Register your Interest here</b>.')
+def product_detail(request):
+        return render(request, 'public/frontend/product-detail.html')
 
-def services(request):
-    return HttpResponse('<h1>We offer a lot of Services. Come back here in the nearest future to view them.</h1>👌')
+def product_list1(request):
+    return render(request, 'public/frontend/product-list1.html')
+
+def product_list2(request):
+    return render(request, 'public/frontend/product-list2.html')
