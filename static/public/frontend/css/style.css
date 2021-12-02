@@ -67,7 +67,7 @@ body{
 		background-color:#BFA007;
 	}
 
-	.navbar-nav .active{
+	.navbar-nav li.active{
 		background-color: #BFA007;
 	}
 

@@ -113,7 +113,7 @@
                {% url 'Alabian_app:contact' as Contact %}
               <li {% if request.path == Home %} class = 'active' {% endif %}><a href="{% url 'home' %}">Home</a></li>
               <li  {% if request.path == About %} class = 'active' {% endif %}><a href="{% url 'Alabian_app:about' %} ">About</a></li>
-              <li  {% if request.path == Product_list1 %} class = 'active' {% endif %}><a href="{% url 'Sylvia_app:product_list1' %}" class="active">Phones</a></li>
+              <li  {% if request.path == Product_list1 %} class = 'active' {% endif %}><a href="{% url 'Sylvia_app:product_list1' %}">Phones</a></li>
               <li  {% if request.path == Product_list2 %} class = 'active' {% endif %}><a href="{% url 'Sylvia_app:product_list2' %}">Laptops</a></li>
               <li><a href="#">Shirts</a></li>
               <li><a href="#">Screens</a></li>
