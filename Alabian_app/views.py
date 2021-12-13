@@ -7,7 +7,8 @@ def home(request):
     return render(request, 'public/frontend/index.html')
 
 def about(request):
-    return render(request, 'public/frontend/about.html')
+    team= Team_Member.objects.all()
+    return render(request, 'public/frontend/about.html', {'team': team})
    
 def contact(request):
     return render(request, 'public/frontend/contact.html')
